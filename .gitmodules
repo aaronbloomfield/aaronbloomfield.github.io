@@ -1,3 +1,6 @@
 [submodule "pdr"]
 	path = pdr
 	url = https://github.com/aaronbloomfield/pdr.git
+[submodule "slp"]
+	path = slp
+	url = https://github.com/aaronbloomfield/slp.git
