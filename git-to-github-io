@@ -15,24 +15,22 @@ git config user.name "Aaron Bloomfield"
 git config push.default simple
 
 # pull the github.io repo
-echo "Pulling github.io..."
+echo Pulling github.io...
 git pull
 /bin/echo
 
-# pull each submodule and commit any changes
-for submod in pdr slp dada ; do
-    echo Pulling $submod...
-    cd $submod
-    git pull https://github.com/aaronbloomfield/$submod.git master
-    cd ..
-    echo Adding $submod and commiting...
-    git add $submod
-    git commit -m"Automated propagation of changes from the $submod submodule to my github.io page"
-    /bin/echo
-done
+# update each submodule
+echo Updating all the submodules...
+git submodule update --recursive --remote
+/bin/echo
+
+# commit any changes
+echo Commiting changes to the github.io repo...
+git commit -a -m"Automated propagation of changes from a submodule to my github.io page"
+/bin/echo
 
 # push the updated github.io repo
-echo "Pushing changes to github.io..."
+echo Pushing changes to github...
 git push
 /bin/echo
 
