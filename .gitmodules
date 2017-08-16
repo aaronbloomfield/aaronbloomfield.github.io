@@ -4,3 +4,6 @@
 [submodule "slp"]
 	path = slp
 	url = https://github.com/aaronbloomfield/slp.git
+[submodule "dada"]
+	path = dada
+	url = https://github.com/aaronbloomfield/dada

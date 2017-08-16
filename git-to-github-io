@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# this code adapted from
+# http://stackoverflow.com/questions/1811730/how-do-you-work-with-a-git-repository-within-another-repository
+
+# set my home directory
+export HOME=/home/aaron
+
+# where the github.io repo is cloned to
+cd /home/aaron/git/github.io/
+
+# set some git settings, since they may not be inherited
+git config user.email "aaron@virginia.edu"
+git config user.name "Aaron Bloomfield"
+git config push.default simple
+
+# pull the github.io repo
+echo "Pulling github.io..."
+git pull
+/bin/echo
+
+# pull each submodule and commit any changes
+for submod in pdr slp dada ; do
+    echo Pulling $submod...
+    cd $submod
+    git pull https://github.com/aaronbloomfield/$submod.git master
+    cd ..
+    echo Adding $submod and commiting...
+    git add $submod
+    git commit -m"Automated propagation of changes from the $submod submodule to my github.io page"
+    /bin/echo
+done
+
+# push the updated github.io repo
+echo "Pushing changes to github.io..."
+git push
+/bin/echo
+
+echo "All done!"
