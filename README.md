@@ -13,4 +13,5 @@ github.io site.  Note that the webhook should be set up to run for
 each of the submodules, as well as the github.io site itself.
 
 
-Submodules of submodules are also properly updated via this script.
+Submodules of submodules are also properly updated via this script
+(although none currently exist).
