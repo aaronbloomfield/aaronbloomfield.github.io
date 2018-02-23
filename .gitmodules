@@ -7,6 +7,3 @@
 [submodule "dada"]
 	path = dada
 	url = https://github.com/aaronbloomfield/dada.git
-[submodule "hspc"]
-	path = hspc
-	url = https://github.com/aaronbloomfield/hspc
