@@ -1,6 +1,6 @@
 [submodule "pdr"]
 	path = pdr
-	url = https://github.com/aaronbloomfield/pdr.git
+	url = https://github.com/uva-cs/pdr.git
 [submodule "slp"]
 	path = slp
 	url = https://github.com/aaronbloomfield/slp.git
@@ -10,3 +10,6 @@
 [submodule "hspc"]
 	path = hspc
 	url = https://github.com/aaronbloomfield/hspc.git
+[submodule "ics"]
+	path = ics
+	url = https://github.com/aaronbloomfield/ics.git
