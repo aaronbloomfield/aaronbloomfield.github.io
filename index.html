@@ -1,17 +1,27 @@
-<!doctype html>
-<html>
-  <head>
-    <title>aaron bloomfield @ github.io</title>
-  </head>
-
-  <body>
-    <h1>aaron bloomfield @ github.io</h1>
-
-    <p>You can view my <a href="http://www.cs.virginia.edu/~asb">home page</a> or the <a href="slp/README.html">github.io view of my slp repository</a> or the <a href="dada/readme.html">github.io view of my dada repository</a>.</p>
-
-    <p>While I still have a <a href="pdr/readme.html">github.io view of my pdr repository</a>, it is no longer the current repository for the course; see <a href="https://github.com/markfloryan/pdr">markfloryan/pdr</a> repository for the current version.</p>
-
-    <p>The repo for the SIGCSE 2018 workshop entitled, "Organizing a High School Programming Contest" is <a href="hspc/">here</a>.    
-
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="markdown.css" type="text/css" />
+</head>
+<body>
+<h1 id="aaron-bloomfield-github.io"><a href="http://aaronbloomfield.github.io">aaron bloomfield @ github.io</a></h1>
+<p>I am a professor of computer science at the University of Virginia (view my <a href="https://www.cs.virginia.edu/~asb">home page</a>). This site contains web pages for the various repos that I want to make available online. Note that some are outdated, while others are current. Most of the sites lined to below are released under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> (CC BY-SA), but check each individual site's license for complete details.</p>
+<p>Currently updated sites:</p>
+<ul>
+<li><a href="pdr/">pdr</a>: the course site for a UVa course entitled &quot;Program and Data Representation&quot; -- a CS 3 course in C++ for 2nd year students -- from the <a href="https://github.com/uva-cs/pdr">uva-cs/pdr</a> repo. My personal copy of that repo (aaronbloomfield/pdr) is no longer being updated, but the uva-cs/pdr fork is being updated throughout the 2018-2019 academic year.</li>
+<li><a href="ics/">ics</a>: the course site for a Introduction to Cybersecurity course, from the <a href="https://github.com/aaronbloomfield/ics">aaronbloomfield/ics</a> repo. This course is being taught for the first time at UVa in the fall of 2018, so the course content will be filled in throughout the fall 2018 semester.</li>
+</ul>
+<p>Sites not being currently updated:</p>
+<ul>
+<li><a href="slp/">slp</a>: the course site for a 4th year two semester software engineering capstone course from the <a href="https://github.com/aaronbloomfield/slp">aaronbloomfield/slp</a> repo. I am no longer teaching this course as of the spring of 2018, so this repo is no longer being updated.</li>
+<li><a href="dada/">dada</a>: the course site for a cybersecurity elective, entitled Defense Against the Dark Arts, focusing on binary exploits, from the <a href="https://github.com/aaronbloomfield/dada">aaronbloomfield/dada</a> repo. This course is still being taught at UVa, but by other instructors.</li>
+<li><a href="hspc/">hspc</a>: the start of a repo on how to run high school programming contests, from the <a href="https://github.com/aaronbloomfield/hspc">aaronbloomfield/hspc</a> repo. This was created for the SIGCSE 2018 workshop entitled, &quot;Organizing a High School Programming Contest&quot; is here.</li>
+</ul>
+<p>The various utilities herein -- which you can see from the <a href="https://github.com/aaronbloomfield/aaronbloomfield.github.io">github view of this repo</a> -- are used to update the site. This repo has multiple sub-modules, and when each one receives a push, a webhook is called (<a href="git-to-github-io.php.html">git-to-github-io.php</a>); that runs the <a href="git-to-github-io.html">git-to-github-io</a> bash shell script, which pulls this repo and all it's sub-modules, and then commits any changes. This forces a change to the sub-modules on the github.io site. Note that the webhook should be set up to run for each of the sub-modules, as well as the github.io site itself. Sub-modules of sub-modules are also properly updated via this script (although none currently exist).</p>
+</body>
 </html>

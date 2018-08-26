@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite">
+<title>git-to-github-io</title>
+</head>
+<body bgcolor="white">
+<pre><tt><i><font color="#9A1900">#!/bin/bash</font></i>
+
+<i><font color="#9A1900"># this code adapted from</font></i>
+<i><font color="#9A1900"># http://stackoverflow.com/questions/1811730/how-do-you-work-with-a-git-repository-within-another-repository</font></i>
+
+<i><font color="#9A1900"># set my home directory</font></i>
+<b><font color="#0000FF">export</font></b> <font color="#009900">HOME</font><font color="#990000">=</font>/home/aaron
+
+<i><font color="#9A1900"># where the github.io repo is cloned to</font></i>
+cd /home/aaron/git/github<font color="#990000">.</font>io<font color="#990000">/</font>
+
+<i><font color="#9A1900"># set some git settings, since they may not be inherited</font></i>
+git config user<font color="#990000">.</font>email <font color="#FF0000">"aaron@virginia.edu"</font>
+git config user<font color="#990000">.</font>name <font color="#FF0000">"Aaron Bloomfield"</font>
+git config push<font color="#990000">.</font>default simple
+
+<i><font color="#9A1900"># pull the github.io repo</font></i>
+echo Pulling github<font color="#990000">.</font>io<font color="#990000">...</font>
+git pull
+/bin/echo
+
+<i><font color="#9A1900"># update each submodule</font></i>
+echo Updating all the submodules<font color="#990000">...</font>
+git submodule update --recursive --remote
+/bin/echo
+
+<i><font color="#9A1900"># commit any changes</font></i>
+echo Commiting changes to the github<font color="#990000">.</font>io repo<font color="#990000">...</font>
+git commit -a -m<font color="#FF0000">"Automated propagation of changes from a submodule to my github.io page"</font>
+/bin/echo
+
+<i><font color="#9A1900"># push the updated github.io repo</font></i>
+echo Pushing changes to github<font color="#990000">...</font>
+git push
+/bin/echo
+
+echo <font color="#FF0000">"All done!"</font>
+</tt></pre>
+</body>
+</html>
