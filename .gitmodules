@@ -7,9 +7,6 @@
 [submodule "hspc"]
 	path = hspc
 	url = https://github.com/aaronbloomfield/hspc.git
-[submodule "ics"]
-	path = ics
-	url = https://github.com/aaronbloomfield/ics.git
 [submodule "pdr"]
 	path = pdr
 	url = https://github.com/uva-cs/pdr
