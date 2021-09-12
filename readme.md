@@ -21,9 +21,9 @@ Currently updated sites:
 - [ics](ics/): the course site for a Introduction to Cybersecurity
   course, from the
   [aaronbloomfield/ics](https://github.com/aaronbloomfield/ics) repo.
-  This course is being taught for the first time at UVa in the fall of
-  2018, so the course content will be filled in throughout the fall
-  2018 semester.
+  Although the course is still being taught, I am not teaching it, so
+  one should look elsewhere for the current semester's iteration of
+  the course.
 
 Sites not being currently updated:
 
