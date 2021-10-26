@@ -12,7 +12,7 @@ details.
 
 Currently updated sites:
 
-- [pdr](pdr/): the course site for a UVa course entitled "Program and
+- [pdr](pdr/): the course site for a UVA course entitled "Program and
   Data Representation" -- a CS 3 course in C++ for 2nd year students --
   from the [uva-cs/pdr](https://github.com/uva-cs/pdr) repo.  My
   personal copy of that repo (aaronbloomfield/pdr) is no longer being
@@ -24,6 +24,8 @@ Currently updated sites:
   Although the course is still being taught, I am not teaching it, so
   one should look elsewhere for the current semester's iteration of
   the course.
+- [ccc](ccc/): the course site for an upcoming UVA course on
+  Cryptocurrency.
 
 Sites not being currently updated:
 
@@ -36,7 +38,7 @@ Sites not being currently updated:
   entitled Defense Against the Dark Arts, focusing on binary
   exploits, from the
   [aaronbloomfield/dada](https://github.com/aaronbloomfield/dada)
-  repo.  This course is still being taught at UVa, but by other
+  repo.  This course is still being taught at UVA, but by other
   instructors.
 - [hspc](hspc/): the start of a repo on how to run high school
   programming contests, from the
