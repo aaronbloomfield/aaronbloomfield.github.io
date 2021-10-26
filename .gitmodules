@@ -12,4 +12,4 @@
 	url = https://github.com/uva-cs/pdr
 [submodule "ccc"]
 	path = ccc
-	url = git@github.com:aaronbloomfield/ccc
+	url = https://github.com/aaronbloomfield/ccc
