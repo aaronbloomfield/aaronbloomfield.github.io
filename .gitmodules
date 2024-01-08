@@ -13,3 +13,6 @@
 [submodule "ccc"]
 	path = ccc
 	url = http://github.com/aaronbloomfield/ccc
+[submodule "nws"]
+	path = nws
+	url = https://github.com/aaronbloomfield/nws
