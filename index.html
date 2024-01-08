@@ -8,10 +8,18 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="markdown.css" />
@@ -23,7 +31,7 @@
 <h1 id="aaron-bloomfield-github.io"><a
 href="http://aaronbloomfield.github.io">aaron bloomfield @
 github.io</a></h1>
-<p>I am a professor of computer science at the University of Virginia
+<p>I am a Professor of Computer Science at the University of Virginia
 (view my <a href="https://www.cs.virginia.edu/~asb">home page</a>). This
 site contains web pages for my various course repositories available
 online. Note that some are outdated, while others are current. Most of
@@ -33,6 +41,19 @@ Attribution-ShareAlike 4.0 International License</a> (CC BY-SA), but
 check each individual site’s license for complete details.</p>
 <p>Currently updated sites:</p>
 <ul>
+<li><a href="nws/">nws</a>: a 4th year course on Network Security. The
+spring 2024 semester is the first time I am teaching it, so the material
+in this repository will be filled in throughout the semester.</li>
+<li><a href="ccc/">ccc</a>: a 4th year course on Cryptocurrency. It is
+being offered in the spring of 2024.</li>
+<li><a href="ics/">ics</a>: the course site for a Introduction to
+Cybersecurity course, from the<a
+href="https://github.com/aaronbloomfield/ics">aaronbloomfield/ics</a>
+repo. Although the course is still being taught, I am not teaching it in
+the spring of 2024.</li>
+</ul>
+<p>Sites not being currently updated:</p>
+<ul>
 <li><a href="pdr/">pdr</a>: the course site for a UVA course entitled
 “Program and Data Representation” – a CS 3 course in C++ for 2nd year
 students – from the <a
@@ -40,18 +61,6 @@ href="https://github.com/uva-cs/pdr">uva-cs/pdr</a> repo. My personal
 copy of that repo (aaronbloomfield/pdr) is no longer being updated, but
 the uva-cs/pdr fork is being updated throughout the 2018-2019 academic
 year.</li>
-<li><a href="ccc/">ccc</a>: a 4th year course on Cryptocurrency. It is
-being offered in the spring of 2022, and the content is being filled in
-during that time.</li>
-<li><a href="ics/">ics</a>: the course site for a Introduction to
-Cybersecurity course, from the<a
-href="https://github.com/aaronbloomfield/ics">aaronbloomfield/ics</a>
-repo. Although the course is still being taught, I am not teaching it,
-so one should look elsewhere for the current semester’s iteration of the
-course.</li>
-</ul>
-<p>Sites not being currently updated:</p>
-<ul>
 <li><a href="slp/">slp</a>: the course site for a 4th year two semester
 software engineering capstone course from the <a
 href="https://github.com/aaronbloomfield/slp">aaronbloomfield/slp</a>
