@@ -6,7 +6,7 @@ I am a Professor of Computer Science at the University of Virginia (view my [hom
 Currently updated sites:
 
 
-- [nws](nws/): a 4th year course on Network Security.  The spring 2024 semester is the first time I am teaching it, so the material in this repository will be filled in throughout the semester.
+- [nws](nws/): a 4th year course on Network Security.  The spring 2024 semester is the first time I am teaching it, so the material in this repository will be filled in throughout this semester.
 - [ccc](ccc/): a 4th year course on Cryptocurrency.  It is being offered in the spring of 2024.
 - [ics](ics/): the course site for a Introduction to Cybersecurity course, from the[aaronbloomfield/ics](https://github.com/aaronbloomfield/ics) repo.  Although the course is still being taught, I am not teaching it in the spring of 2024.
 
